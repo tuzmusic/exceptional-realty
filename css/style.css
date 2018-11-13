@@ -11,24 +11,6 @@ p {
   line-height: 1.5em;
 }
 
-figcaption {
-  /* font-weight: normal;
-  font-size: 0.75em;
-  line-height: 1.5em;
-  font-family: Georgia, "Times New Roman", serif; */
-  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
-  color: #777;
-  text-align: right;
-}
-
-/* Class selectors */
-
-.milk-text {
-  font: bold 2.6em 'Elsie Swash Caps', cursive;
-  color: white;
-  text-shadow: 0 2px 3px #000;
-}
-
 /* ID selector */
 
 #logo {}
@@ -60,9 +42,11 @@ figcaption {
 }
 
 /* SECTIONS */
+
 section {
   margin-bottom: 20px;
   padding: 20px;
+  background: white;
 }
 
 header {
@@ -74,7 +58,15 @@ header {
   z-index: 1;
 }
 
+/* BACKGROUNDS */
+
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
+
 /* SOCIAL */
+
 #social {
   position: fixed;
   top: 200px;
@@ -91,8 +83,34 @@ header {
 }
 
 /* MEDIA */
+
 img, video, audio {
   max-width: 100%;
+}
+
+/* STYLE */
+
+figcaption {
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777;
+  text-align: right;
+}
+
+/* Class selectors */
+
+.milk-text {
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+.border-right {
+  border-right: 1px dotted #ccc;
+  padding-right: 30px;
+}
+
+.shadow {
+  box-shadow: 0 3px 10px #333;
 }
 
 /* LAYOUT */
@@ -110,22 +128,18 @@ img, video, audio {
 
 .col-1 {
   float: left;
-  width: 32%; 
-  background: #ccc;
+  width: 32%;
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  background: #ccc;
 }
 
-.col-3 {
-  background: #ccc;
-}
+.col-3 {}
 
 [class*="col-"] {
-  margin-left: 2%; 
+  margin-left: 2%;
 }
 
 .first {
